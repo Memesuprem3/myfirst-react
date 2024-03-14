@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../pages/pages.css'; // Se till att denna sökväg stämmer med din projektmapp
+import '../pages/pages.css'; 
+
 
 const NavBar = () => {
   return (
@@ -13,6 +14,7 @@ const NavBar = () => {
       <li id="contact"><Link to="/contact">Contact</Link></li>
       </ul>
     </nav>
+    
   );
 }
 

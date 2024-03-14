@@ -2,6 +2,7 @@ import React from 'react';
 import './pages.css';
 import NavBar from '../components/NavBar';
 import EasterEgg from '../components/easterEgg';
+import Jagbild from '../Images/jag.JPG'
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
 
       <section className="main-content" id="main-content">
         <h2>Välkommen till mitt digitala CV!</h2>
-        <img src="" alt="Christian Rapp" />
+        <img src={Jagbild} alt="Christian Rapp" />
         {/* Här kan du fylla i övrigt innehåll för CV-sidan */}
       </section>
       

@@ -3,6 +3,7 @@ import './pages.css';
 import NavBar from '../components/NavBar';
 import '../components/Cv.json';
 import EasterEgg from '../components/easterEgg';
+import Jagbild from '../Images/jag.JPG'
 
 export default function PresentationPage() {
   return (
@@ -18,7 +19,7 @@ export default function PresentationPage() {
     </header>
 
     <section class="main-content">
-        <img src="../Images/jag.JPG" alt="Christian Rapp"/>
+    <img src={Jagbild} alt="CR"/>
         <h2>Om mig</h2>
         <p>28 år, bor i Halmstad med Sambon Wilma och Taxen Ubbe.</p>
         <p>Tycker om att vara kreativ och att lösa problem</p>
