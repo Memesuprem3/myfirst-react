@@ -1,0 +1,246 @@
+
+body {
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px; 
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  header {
+    background-color: black;
+    color: #ecf0f1;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  header .h1{
+    text-align: center;
+  }
+  
+  .main-content .project-list img {  
+    padding: 5px;
+    width: 200px; 
+  }
+  .main-content img{
+    padding: 5px;
+    width: 600px; 
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #3498db;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Specifika sidolänkar */
+  nav.cv-page #cv a,
+  nav.presentation-page #presentation a,
+  nav.portfolio-page #portfolio a,
+  nav.kontakt-page #kontakt a,
+  nav.home-page #home a {
+    color: #3498db; 
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Projektlista och modal styling */
+  .project-list {
+    list-style:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .project-list li {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-list li:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal-toggle {
+    display: none;
+  }
+  
+  .modal-toggle:not(:checked) ~ .modal {
+    display: none;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    cursor: default;
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+  }
+  
+  /* Sociala ikoner och hoppa över länk styling */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .skip-link:focus {
+    top: auto;
+    left: auto;
+  }
+  
+  /* Formulär styling */
+  form{
+    .main-content {
+        font-family: 'Playfair Display', serif; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+  
+    input,
+    textarea,
+    button {
+        margin-bottom: 10px;
+        width: 50%;
+
+    }
+  
+    textarea {
+        height: 100px; 
+    }
+  
+    button {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out; 
+    }
+  
+    button:hover {
+        background-color: grey; 
+    } 
+  }
+  
+  /* Fotstil */
+  footer {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Responsiv design */
+  @media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+    }
+  
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0; 
+    }
+  
+    nav a {
+        display: block; 
+        text-align: center; 
+        width: 100%; 
+        padding: 10px 0; 
+    }
+  
+    .project-list li {
+        flex: 0 0 calc(100% - 20px); 
+        margin-bottom: 15px; 
+    }
+  
+    .modal-content {
+        width: 90%; 
+        max-width: 300px; 
+    }
+  
+    .project-list img {
+        max-width: 100%; 
+        height: auto; 
+    }
+  
+    
+    footer {
+        position: relative; 
+        width: 100%;
+    }
+  
+    
+    .social-icons {
+        justify-content: center; 
+    }
+  }

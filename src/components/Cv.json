@@ -1,0 +1,46 @@
+{
+    "utbildningar": [
+        {
+            "namn": "Musik",
+            "skola": "Sturegymnasiet",
+            "år": "2011-2014"
+        },
+        {
+            "namn": "Allmän Linje",
+            "skola": "Katrinebergs Folkhögskola",
+            "år": "2022-2023"
+        }
+    ],
+    "arbetsplatser": [
+        {
+            "roll": "Lokalvårdare",
+            "företag": "Hotel Mårtenson",
+            "år": "2015-2015"
+        },
+        {
+            "roll": "Elev-Assistent",
+            "företag": "Brunsåkerskolan",
+            "år": "2015-2016"
+        },
+        {
+            "roll": "Butiksarbetare",
+            "företag": "Emmaus",
+            "år": "2016-2017"
+        },
+        {
+            "roll": "Butiksarbetare/Ledningsgrupp",
+            "företag": "Systembolaget",
+            "år": "2017-2021"
+        },
+        {
+            "roll": "Lagerarbetare",
+            "företag": "Biltema Logistics",
+            "år": "2021-2022"
+        },
+        {
+            "roll": "Butiksarbetare",
+            "företag": "Willys",
+            "år": "2022-"
+        }
+    ]
+}
